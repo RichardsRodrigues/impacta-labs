@@ -59,4 +59,4 @@ totals.grandTotal → simplifica cálculo do valor médio das vendas.
 
 ## Observações
 
-- O `command_mongo.sh` mostra como responder a pergunta: "Qual é a média de produtos comprados por cliente?"
+- O `command_mongo.sh` mostra como responder a pergunta: "Qual é o valor médio das vendas por estado do cliente?"
