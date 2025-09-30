@@ -1,6 +1,9 @@
 ## Integrantes
+| Nome | 
+| :--- | 
+| **Richard Rodrigues Silva** |
 
-Richard Rodrigues Silva
+----
 
 ## Index
 - [Apache Hadoop](./hadoop/README.md)
