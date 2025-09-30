@@ -10,4 +10,4 @@
 - `customers`: dados do cliente, incluindo nome, e-mail, cidade, estado, signupDate.
 - `products`: dados do produto, incluindo sku, nome, categoria e preço.
 - `events`: rastreamento de cliques e compras, incluindo productId, userId, timestamp e detalhes de compra.
-- Mantemos o modelo pronto para expansão de produtos futuros e análise de comportamento dos clientes.
+- Dessa forma mantemos o modelo pronto para expansão de produtos futuros e análise de comportamento dos clientes.
