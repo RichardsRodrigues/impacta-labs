@@ -11,3 +11,9 @@
 - `products`: dados do produto, incluindo sku, nome, categoria e preço.
 - `events`: rastreamento de cliques e compras, incluindo productId, userId, timestamp e detalhes de compra.
 - Dessa forma mantemos o modelo pronto para expansão de produtos futuros e análise de comportamento dos clientes.
+
+----
+
+## Observações
+
+- O `command_mongo.sh` mostra como responder a pergunta: "Qual é a média de produtos comprados por cliente?"
