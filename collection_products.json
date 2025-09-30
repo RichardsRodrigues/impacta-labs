@@ -1,0 +1,137 @@
+[
+  {
+    "_id": {
+      "$oid": "651234000000000000000001"
+    },
+    "sku": "BOOK-0001",
+    "name": "Aprendendo MongoDB",
+    "category": "books",
+    "price": 59.9
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000002"
+    },
+    "sku": "BOOK-0002",
+    "name": "Introdução a Python",
+    "category": "books",
+    "price": 79.9
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000003"
+    },
+    "sku": "BOOK-0003",
+    "name": "Machine Learning Básico",
+    "category": "books",
+    "price": 99.9
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000004"
+    },
+    "sku": "BOOK-0004",
+    "name": "Banco de Dados Relacionais",
+    "category": "books",
+    "price": 89.9
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000005"
+    },
+    "sku": "BOOK-0005",
+    "name": "NoSQL para Iniciantes",
+    "category": "books",
+    "price": 69.9
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000006"
+    },
+    "sku": "CD-0001",
+    "name": "Coleção Clássicos Vol. 1",
+    "category": "cds",
+    "price": 29.9
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000007"
+    },
+    "sku": "CD-0002",
+    "name": "Rock Nacional Anos 80",
+    "category": "cds",
+    "price": 34.9
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000008"
+    },
+    "sku": "CD-0003",
+    "name": "MPB Essencial",
+    "category": "cds",
+    "price": 24.9
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000009"
+    },
+    "sku": "CD-0004",
+    "name": "Jazz Collection",
+    "category": "cds",
+    "price": 39.9
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000010"
+    },
+    "sku": "CD-0005",
+    "name": "Hits Internacionais",
+    "category": "cds",
+    "price": 44.9
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000011"
+    },
+    "sku": "KIT-0001",
+    "name": "Liquidificador Compacto",
+    "category": "kitchen_appliances",
+    "price": 199.9
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000012"
+    },
+    "sku": "KIT-0002",
+    "name": "Batedeira Planetária",
+    "category": "kitchen_appliances",
+    "price": 399.9
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000013"
+    },
+    "sku": "KIT-0003",
+    "name": "Torradeira Inox",
+    "category": "kitchen_appliances",
+    "price": 149.9
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000014"
+    },
+    "sku": "KIT-0004",
+    "name": "Cafeteira Elétrica",
+    "category": "kitchen_appliances",
+    "price": 299.9
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000015"
+    },
+    "sku": "KIT-0005",
+    "name": "Chaleira Elétrica",
+    "category": "kitchen_appliances",
+    "price": 129.9
+  }
+]
