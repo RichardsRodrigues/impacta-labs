@@ -5,16 +5,9 @@
 
 ----
 
-## Index
-- [Apache Hadoop](./hadoop/README.md)
-- [Modern Data Stack](./modern-data-stack/README.md)
-- [NoSQL Databases](./nosql-databases/README.md)
-
-## Como Contribuir
-Se você deseja contribuir com este repositório, siga as etapas abaixo:
-- Abrir uma issue para discutir a sua contribuição.
-- Crie um fork do repositório.
-- Crie uma branch para a sua feature (`git checkout -b feature/nome-da-feature`).
-- Faça as alterações necessárias e commit (`git commit -m 'Adiciona nova feature'`).
-- Envie a branch para o seu fork (`git push origin feature/nome-da-feature`).
-- Abra um Pull Request para o repositório original.
+## Decisões
+- Optei por usar **3 collections** (`customers`, `products`, `events`) para otimizar a performance, flexibilidade e manutenibilidade.
+- `customers`: dados do cliente, incluindo nome, e-mail, cidade, estado, signupDate.
+- `products`: dados do produto, incluindo sku, nome, categoria e preço.
+- `events`: rastreamento de cliques e compras, incluindo productId, userId, timestamp e detalhes de compra.
+- Mantemos o modelo pronto para expansão de produtos futuros e análise de comportamento dos clientes.
