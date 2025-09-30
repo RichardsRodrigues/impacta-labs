@@ -1,6 +1,6 @@
-## Introdução
+## Integrantes
 
-Este repositório contém laboratórios práticos para o [MBA Impacta](https://mba.impacta.edu.br/mbas/data-engineering/) de **Data Engineering** nas disciplinas de **Scalable Big Data Architecture** e **NoSQL Databases**. Os laboratórios são projetados para serem executados localmente, utilizando o Docker e VirtualBox para facilitar a configuração e o gerenciamento dos ambientes de desenvolvimento.
+Richard Rodrigues Silva
 
 ## Index
 - [Apache Hadoop](./hadoop/README.md)
