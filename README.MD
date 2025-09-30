@@ -14,6 +14,49 @@
 
 ----
 
+##Justificativa dos campos **Collection Customers**:
+
+userId → chave de negócio para relacionar eventos a clientes.
+
+name / email → identificação mínima (email também pode ser útil para marketing).
+
+state / city → essencial para responder “top 20 produtos por estado” e “valor médio das vendas por estado”.
+
+signupDate → permite análises históricas ou por coorte (novos clientes vs antigos).
+
+----
+
+##Justificativa dos campos **Collection products**:
+
+sku → garante que cada produto tenha um identificador de catálogo humano-legível.
+
+name → necessário para relatórios e visualizações (ex.: top 20 produtos mais populares).
+
+category → indispensável para responder “quantos de cada tipo de produto foram vendidos nos últimos 30 dias”.
+
+price → embora o valor histórico seja armazenado no evento de compra, manter o preço atual no produto ajuda em relatórios rápidos e consultas de catálogo.
+
+
+----
+##Justificativa dos campos **Collection events**:
+
+eventType → diferencia cliques de compras.
+
+userId → vincula o evento ao cliente.
+
+timestamp → necessário para análises temporais (últimos 30 dias, por exemplo).
+
+items.productId / quantity / unitPrice → permitem contar produtos vendidos e calcular receita.
+
+shipping.state → usado para responder perguntas por estado.
+
+totals.grandTotal → simplifica cálculo do valor médio das vendas.
+
+
+----
+
+
+
 ## Observações
 
 - O `command_mongo.sh` mostra como responder a pergunta: "Qual é a média de produtos comprados por cliente?"
