@@ -14,7 +14,7 @@
 
 ----
 
-##Justificativa dos campos **Collection Customers**:
+## Justificativa dos campos **Collection Customers**:
 
 userId → chave de negócio para relacionar eventos a clientes.
 
@@ -26,7 +26,7 @@ signupDate → permite análises históricas ou por coorte (novos clientes vs an
 
 ----
 
-##Justificativa dos campos **Collection products**:
+## Justificativa dos campos **Collection products**:
 
 sku → garante que cada produto tenha um identificador de catálogo humano-legível.
 
@@ -38,7 +38,7 @@ price → embora o valor histórico seja armazenado no evento de compra, manter 
 
 
 ----
-##Justificativa dos campos **Collection events**:
+## Justificativa dos campos **Collection events**:
 
 eventType → diferencia cliques de compras.
 
