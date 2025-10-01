@@ -1,17 +1,62 @@
-## Introdução
+## Integrantes
+| Nome | 
+| :--- | 
+| **Richard Rodrigues Silva** |
 
-Este repositório contém laboratórios práticos para o [MBA Impacta](https://mba.impacta.edu.br/mbas/data-engineering/) de **Data Engineering** nas disciplinas de **Scalable Big Data Architecture** e **NoSQL Databases**. Os laboratórios são projetados para serem executados localmente, utilizando o Docker e VirtualBox para facilitar a configuração e o gerenciamento dos ambientes de desenvolvimento.
+----
 
-## Index
-- [Apache Hadoop](./hadoop/README.md)
-- [Modern Data Stack](./modern-data-stack/README.md)
-- [NoSQL Databases](./nosql-databases/README.md)
+## Decisões
+- Optei por usar **3 collections** (`customers`, `products`, `events`) para otimizar a performance, flexibilidade e manutenibilidade.
+- `customers`: dados do cliente, incluindo nome, e-mail, cidade, estado, signupDate.
+- `products`: dados do produto, incluindo sku, nome, categoria e preço.
+- `events`: rastreamento de cliques e compras, incluindo productId, userId, timestamp e detalhes de compra.
+- Dessa forma mantemos o modelo pronto para expansão de produtos futuros e análise de comportamento dos clientes.
 
-## Como Contribuir
-Se você deseja contribuir com este repositório, siga as etapas abaixo:
-- Abrir uma issue para discutir a sua contribuição.
-- Crie um fork do repositório.
-- Crie uma branch para a sua feature (`git checkout -b feature/nome-da-feature`).
-- Faça as alterações necessárias e commit (`git commit -m 'Adiciona nova feature'`).
-- Envie a branch para o seu fork (`git push origin feature/nome-da-feature`).
-- Abra um Pull Request para o repositório original.
+----
+
+## Justificativa dos campos **Collection Customers**:
+
+userId → chave de negócio para relacionar eventos a clientes.
+
+name / email → identificação mínima (email também pode ser útil para marketing).
+
+state / city → essencial para responder “top 20 produtos por estado” e “valor médio das vendas por estado”.
+
+signupDate → permite análises históricas ou por coorte (novos clientes vs antigos).
+
+----
+
+## Justificativa dos campos **Collection products**:
+
+sku → garante que cada produto tenha um identificador de catálogo humano-legível.
+
+name → necessário para relatórios e visualizações (ex.: top 20 produtos mais populares).
+
+category → indispensável para responder “quantos de cada tipo de produto foram vendidos nos últimos 30 dias”.
+
+price → embora o valor histórico seja armazenado no evento de compra, manter o preço atual no produto ajuda em relatórios rápidos e consultas de catálogo.
+
+
+----
+## Justificativa dos campos **Collection events**:
+
+eventType → diferencia cliques de compras.
+
+userId → vincula o evento ao cliente.
+
+timestamp → necessário para análises temporais (últimos 30 dias, por exemplo).
+
+items.productId / quantity / unitPrice → permitem contar produtos vendidos e calcular receita.
+
+shipping.state → usado para responder perguntas por estado.
+
+totals.grandTotal → simplifica cálculo do valor médio das vendas.
+
+
+----
+
+
+
+## Observações
+
+- O `command_mongo.sh` mostra como responder a pergunta: "Qual é o valor médio das vendas por estado do cliente?"

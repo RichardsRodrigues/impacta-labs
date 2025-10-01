@@ -1,0 +1,350 @@
+[
+  {
+    "_id": {
+      "$oid": "651234000000000000000201"
+    },
+    "eventType": "click",
+    "userId": "user_1001",
+    "productId": {
+      "$oid": "651234000000000000000001"
+    },
+    "timestamp": {
+      "$date": "2025-09-01T10:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000202"
+    },
+    "eventType": "click",
+    "userId": "user_1002",
+    "productId": {
+      "$oid": "651234000000000000000006"
+    },
+    "timestamp": {
+      "$date": "2025-09-01T11:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000203"
+    },
+    "eventType": "click",
+    "userId": "user_1003",
+    "productId": {
+      "$oid": "651234000000000000000012"
+    },
+    "timestamp": {
+      "$date": "2025-09-02T09:30:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000204"
+    },
+    "eventType": "purchase",
+    "userId": "user_1001",
+    "timestamp": {
+      "$date": "2025-09-02T12:00:00Z"
+    },
+    "items": [
+      {
+        "productId": {
+          "$oid": "651234000000000000000001"
+        },
+        "quantity": 1,
+        "unitPrice": 59.9
+      },
+      {
+        "productId": {
+          "$oid": "651234000000000000000006"
+        },
+        "quantity": 2,
+        "unitPrice": 29.9
+      }
+    ],
+    "shipping": {
+      "state": "SP"
+    },
+    "totals": {
+      "grandTotal": 119.7
+    }
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000205"
+    },
+    "eventType": "purchase",
+    "userId": "user_1002",
+    "timestamp": {
+      "$date": "2025-09-03T14:00:00Z"
+    },
+    "items": [
+      {
+        "productId": {
+          "$oid": "651234000000000000000007"
+        },
+        "quantity": 1,
+        "unitPrice": 34.9
+      }
+    ],
+    "shipping": {
+      "state": "RJ"
+    },
+    "totals": {
+      "grandTotal": 34.9
+    }
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000206"
+    },
+    "eventType": "purchase",
+    "userId": "user_1003",
+    "timestamp": {
+      "$date": "2025-09-04T15:30:00Z"
+    },
+    "items": [
+      {
+        "productId": {
+          "$oid": "651234000000000000000002"
+        },
+        "quantity": 1,
+        "unitPrice": 79.9
+      },
+      {
+        "productId": {
+          "$oid": "651234000000000000000012"
+        },
+        "quantity": 1,
+        "unitPrice": 399.9
+      }
+    ],
+    "shipping": {
+      "state": "MG"
+    },
+    "totals": {
+      "grandTotal": 479.8
+    }
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000207"
+    },
+    "eventType": "purchase",
+    "userId": "user_1004",
+    "timestamp": {
+      "$date": "2025-09-05T16:00:00Z"
+    },
+    "items": [
+      {
+        "productId": {
+          "$oid": "651234000000000000000013"
+        },
+        "quantity": 1,
+        "unitPrice": 149.9
+      }
+    ],
+    "shipping": {
+      "state": "BA"
+    },
+    "totals": {
+      "grandTotal": 149.9
+    }
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000208"
+    },
+    "eventType": "purchase",
+    "userId": "user_1005",
+    "timestamp": {
+      "$date": "2025-09-06T17:00:00Z"
+    },
+    "items": [
+      {
+        "productId": {
+          "$oid": "651234000000000000000004"
+        },
+        "quantity": 1,
+        "unitPrice": 89.9
+      }
+    ],
+    "shipping": {
+      "state": "RS"
+    },
+    "totals": {
+      "grandTotal": 89.9
+    }
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000209"
+    },
+    "eventType": "click",
+    "userId": "user_1006",
+    "productId": {
+      "$oid": "651234000000000000000011"
+    },
+    "timestamp": {
+      "$date": "2025-09-07T11:30:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000210"
+    },
+    "eventType": "purchase",
+    "userId": "user_1006",
+    "timestamp": {
+      "$date": "2025-09-07T12:00:00Z"
+    },
+    "items": [
+      {
+        "productId": {
+          "$oid": "651234000000000000000011"
+        },
+        "quantity": 1,
+        "unitPrice": 199.9
+      }
+    ],
+    "shipping": {
+      "state": "SP"
+    },
+    "totals": {
+      "grandTotal": 199.9
+    }
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000211"
+    },
+    "eventType": "purchase",
+    "userId": "user_1007",
+    "timestamp": {
+      "$date": "2025-09-08T13:00:00Z"
+    },
+    "items": [
+      {
+        "productId": {
+          "$oid": "651234000000000000000008"
+        },
+        "quantity": 2,
+        "unitPrice": 24.9
+      }
+    ],
+    "shipping": {
+      "state": "RJ"
+    },
+    "totals": {
+      "grandTotal": 49.8
+    }
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000212"
+    },
+    "eventType": "purchase",
+    "userId": "user_1008",
+    "timestamp": {
+      "$date": "2025-09-09T14:00:00Z"
+    },
+    "items": [
+      {
+        "productId": {
+          "$oid": "651234000000000000000005"
+        },
+        "quantity": 1,
+        "unitPrice": 69.9
+      }
+    ],
+    "shipping": {
+      "state": "MG"
+    },
+    "totals": {
+      "grandTotal": 69.9
+    }
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000213"
+    },
+    "eventType": "purchase",
+    "userId": "user_1009",
+    "timestamp": {
+      "$date": "2025-09-10T15:00:00Z"
+    },
+    "items": [
+      {
+        "productId": {
+          "$oid": "651234000000000000000014"
+        },
+        "quantity": 1,
+        "unitPrice": 299.9
+      }
+    ],
+    "shipping": {
+      "state": "BA"
+    },
+    "totals": {
+      "grandTotal": 299.9
+    }
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000214"
+    },
+    "eventType": "purchase",
+    "userId": "user_1010",
+    "timestamp": {
+      "$date": "2025-09-11T16:00:00Z"
+    },
+    "items": [
+      {
+        "productId": {
+          "$oid": "651234000000000000000010"
+        },
+        "quantity": 1,
+        "unitPrice": 44.9
+      }
+    ],
+    "shipping": {
+      "state": "RS"
+    },
+    "totals": {
+      "grandTotal": 44.9
+    }
+  },
+  {
+    "_id": {
+      "$oid": "651234000000000000000215"
+    },
+    "eventType": "purchase",
+    "userId": "user_1011",
+    "timestamp": {
+      "$date": "2025-09-12T17:00:00Z"
+    },
+    "items": [
+      {
+        "productId": {
+          "$oid": "651234000000000000000003"
+        },
+        "quantity": 1,
+        "unitPrice": 99.9
+      },
+      {
+        "productId": {
+          "$oid": "651234000000000000000015"
+        },
+        "quantity": 1,
+        "unitPrice": 129.9
+      }
+    ],
+    "shipping": {
+      "state": "SP"
+    },
+    "totals": {
+      "grandTotal": 229.8
+    }
+  }
+]
